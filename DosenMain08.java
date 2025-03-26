@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class DosenMain {
+public class DosenMain08 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        DataDosen data = new DataDosen();
+        DataDosen08 data = new DataDosen08();
         int pilihan;
 
         do {
@@ -39,7 +39,7 @@ public class DosenMain {
                     int usia = sc.nextInt();
                     sc.nextLine();
 
-                    data.tambah(new Dosen(kode, nama, jk, usia));
+                    data.tambah(new Dosen08(kode, nama, jk, usia));
                     System.out.println("Data dosen berhasil ditambahkan!");
                     break;
                 case 2:

@@ -1,8 +1,8 @@
-public class DataDosen {
-    Dosen[] daftarDosen = new Dosen[10];
+public class DataDosen08 {
+    Dosen08[] daftarDosen = new Dosen08[10];
     int jumlah = 0;
 
-    public void tambah(Dosen dsn) {
+    public void tambah(Dosen08 dsn) {
         if (jumlah < daftarDosen.length) {
             daftarDosen[jumlah] = dsn;
             jumlah++;
@@ -25,7 +25,7 @@ public class DataDosen {
         for (int i = 0; i < jumlah - 1; i++) {
             for (int j = 0; j < jumlah - i - 1; j++) {
                 if (daftarDosen[j].usia > daftarDosen[j + 1].usia) {
-                    Dosen temp = daftarDosen[j];
+                    Dosen08 temp = daftarDosen[j];
                     daftarDosen[j] = daftarDosen[j + 1];
                     daftarDosen[j + 1] = temp;
                 }
@@ -38,7 +38,7 @@ public class DataDosen {
         for (int i = 0; i < jumlah - 1; i++) {
             for (int j = 0; j < jumlah - i - 1; j++) {
                 if (daftarDosen[j].usia < daftarDosen[j + 1].usia) {
-                    Dosen temp = daftarDosen[j];
+                    Dosen08 temp = daftarDosen[j];
                     daftarDosen[j] = daftarDosen[j + 1];
                     daftarDosen[j + 1] = temp;
                 }

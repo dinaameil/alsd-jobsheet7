@@ -1,8 +1,8 @@
-class Dosen {
+class Dosen08 {
     String kode, nama, jenisKelamin;
     int usia;
 
-    public Dosen(String kode, String nama, String jenisKelamin, int usia) {
+    public Dosen08(String kode, String nama, String jenisKelamin, int usia) {
         this.kode = kode;
         this.nama = nama;
         this.jenisKelamin = jenisKelamin;
