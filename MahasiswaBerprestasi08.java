@@ -1,13 +1,17 @@
 public class MahasiswaBerprestasi08 {
-    Mahasiswa08 [] listMhs = new Mahasiswa08[5];
+    Mahasiswa08[] listMhs; 
     int idx;
 
+    public MahasiswaBerprestasi08(int jumlah) {
+        listMhs = new Mahasiswa08[jumlah];
+    }
+
     void tambah (Mahasiswa08 m) {
-        if (idx<listMhs.length){
-            listMhs[idx]=m;
+        if (idx < listMhs.length) {
+            listMhs[idx] = m;
             idx++;
         } else {
-            System.out.println("data sudah penuh");
+            System.out.println("Data sudah penuh");
         }
     }
 
